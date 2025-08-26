@@ -1,0 +1,45 @@
+- name: "LED 1"
+  unique_id: "esp32_led_1"
+  command_topic: "office/light/led1/set"
+  state_topic: "office/light/led1/state"
+  brightness_command_topic: "office/light/led1/brightness/set"
+  brightness_state_topic: "office/light/led1/brightness/state"
+  payload_on: "ON"
+  payload_off: "OFF"
+  brightness_scale: 255
+  qos: 0
+  retain: false
+- name: "ErkelyKorlatVilagitas"
+  unique_id: "csepelhome_esp32_erkely_korlat_vilagitas"
+  command_topic: "csepelhome/light/erkelykorlatvilagitas/set"
+  state_topic: "csepelhome/light/erkelykorlatvilagitas/state"
+  brightness_command_topic: "csepelhome/light/erkelykorlatvilagitas/brightness/set"
+  brightness_state_topic: "csepelhome/light/erkelykorlatvilagitas/brightness/state"
+  payload_on: "ON"
+  payload_off: "OFF"
+  brightness_scale: 255
+  qos: 0
+  retain: false
+- name: "ErkelyFaliracsVilagitas"
+  unique_id: "csepelhome_esp32_erkely_faliracs_vilagitas"
+  command_topic: "csepelhome/light/erkelyfaliracsvilagitas/set"
+  state_topic: "csepelhome/light/erkelyfaliracsvilagitas/state"
+  brightness_command_topic: "csepelhome/light/erkelyfaliracsvilagitas/brightness/set"
+  brightness_state_topic: "csepelhome/light/erkelyfaliracsvilagitas/brightness/state"
+  payload_on: "ON"
+  payload_off: "OFF"
+  brightness_scale: 255
+  qos: 0
+  retain: false
+- name: "Esp32rgb"
+  unique_id: "csepelhome_esp32_rgb"
+  schema: json
+  command_topic: "csepelhome/light/esp32rgb/set"
+  state_topic: "csepelhome/light/esp32rgb/state"
+  supported_color_modes:
+    - rgb
+  brightness: true
+  brightness_scale: 255
+  qos: 0
+  retain: false
+
